@@ -1,0 +1,141 @@
+.left-sidebar {
+  margin-top: 30px;
+}
+
+.vertical-slider  {
+  border-radius: 4px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+}
+
+.site-news {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li:not(:last-child) > a > div {
+    min-height: 85px;
+    margin-bottom: 10px;
+
+    &::after {
+    position: absolute;
+    content: "";
+    width: calc(100% - 85px);
+    height: 1px;
+    background-color: $gray-color;
+    buttom: -5px;
+    right: 0;
+  }
+}
+}
+  
+.site-news-item {
+  clear: both;
+  position: relative;
+
+ &:not(:last-child) {
+        min-height: 85px;
+        margin-bottom: 15px;
+
+        &::after {
+            position: absolute;
+            right: 0;
+            bottom: -5px;
+
+            width: calc(100% - 85px);
+            height: 1px;
+
+            content: "";
+
+            background-color: $gray-color;
+        }
+    }
+
+    &:hover {
+        .site-news-item_title a {
+            color: $accent-color;
+        }
+
+        .site-news-item_image {
+            border-color: $accent-color;
+            background-color: $accent-color;
+        }
+    }
+
+    &_image {
+        float: left;
+        width: 75px;
+        margin: 0 10px 10px 0;
+        transition: background-color 0.25s ease;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &_date {
+        text-align: right;
+        color: darken($gray-color, 30%);
+        font-size: 0.8rem;
+    }
+
+    &_title {
+        margin-bottom: 10px;
+
+        a {
+            transition: color 0.25s ease;
+            color: $base-color;
+            @include multiple-text-shortener;
+        }
+    }
+}
+
+
+.top-films {
+    .panel-body {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .list-group {
+        margin-bottom: 0;
+    }
+
+    .badge {
+        margin-top: 3px;
+    }
+
+    &-item {
+        border-top: 1px solid $gray-color;
+        border-left: none;
+        border-right: none;
+        background-color: transparent;
+    
+    &:first-child {
+        border-top: none;
+        border-radius: 0;
+    }
+
+    &:last-child {
+        border-bottom: none;
+        border-radius: 0;
+    }
+
+    &:hover {
+        background-color: $accent-color;
+
+    a {
+        color: lighten($gray-color, 14%);
+    }
+
+    .badge {
+        background-color: $dark-color;
+    }
+ }
+}
+}

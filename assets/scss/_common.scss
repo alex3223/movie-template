@@ -1,0 +1,87 @@
+html {
+  overflow-y: scroll;
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  font-family: $font-main;
+}
+
+a {
+  color: $base-color;
+  transition: color 0.5s;
+
+  &:hover,
+  &:focus
+  {
+    text-decoration: none;
+    color: $accent-color;
+  }
+}
+
+h1 {
+  margin: 40px 0;
+  font-family: $font-header;
+
+  @media (min-width: 576px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 2rem;
+  }
+
+  &::after {
+    position: absolute;
+    width: 100%;
+    margin: 0.85em 0 0 15px;
+    border-bottom: 3px solid rgba($accent-light, 0.7);
+    content: "";
+  }
+}
+
+h2 {
+  margin: 50px 0 40px 40px;
+  font-family: $font-header;
+
+  @media (min-width: 576px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 1.75rem;
+  }
+
+  &::before {
+    position: absolute;
+    width: 25px;
+    left: 0;
+    margin: 0.25em 0 0 0;
+    border-bottom: 3px solid rgba($accent-light, 0.9);
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    width: 100%;
+    margin: 0.85em 0 0 15px;
+    border-bottom: 3px solid rgba($accent-light, 0.7);
+    content: "";
+  }
+}
+
+h3 {
+  @media(min-width: 576px) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 1.25rem;
+  }
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
