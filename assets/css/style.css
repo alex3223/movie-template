@@ -68,6 +68,28 @@
   border-color: #dddddd;
   background-color: #f1f1f1; }
 
+@media (min-width: 576px) {
+  h1 {
+    font-size: 3rem; }
+  h2 {
+    font-size: 2.5rem; }
+  h3 {
+    font-size: 1.5rem; }
+  .header-logo_title {
+    letter-spacing: 0.33em;
+    font-size: 3.5rem; } }
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem; }
+  h2 {
+    font-size: 1.75rem; }
+  h3 {
+    font-size: 1.25rem; }
+  .header-logo_title {
+    letter-spacing: 0.2em;
+    font-size: 2.5rem; } }
+
 html {
   overflow-y: scroll;
   font-size: 16px; }
@@ -88,12 +110,6 @@ a {
 h1 {
   margin: 40px 0;
   font-family: "PT Serif", serif; }
-  @media (min-width: 576px) {
-    h1 {
-      font-size: 3rem; } }
-  @media (max-width: 576px) {
-    h1 {
-      font-size: 2rem; } }
   h1::after {
     position: absolute;
     width: 100%;
@@ -104,12 +120,6 @@ h1 {
 h2 {
   margin: 50px 0 40px 40px;
   font-family: "PT Serif", serif; }
-  @media (min-width: 576px) {
-    h2 {
-      font-size: 2.5rem; } }
-  @media (max-width: 576px) {
-    h2 {
-      font-size: 1.75rem; } }
   h2::before {
     position: absolute;
     width: 25px;
@@ -123,14 +133,6 @@ h2 {
     margin: 0.85em 0 0 15px;
     border-bottom: 3px solid rgba(240, 173, 78, 0.7);
     content: ""; }
-
-@media (min-width: 576px) {
-  h3 {
-    font-size: 1.5rem; } }
-
-@media (max-width: 576px) {
-  h3 {
-    font-size: 1.25rem; } }
 
 section {
   position: relative;
@@ -152,14 +154,6 @@ section {
     font-family: "PT Serif", serif;
     letter-spacing: 0.33em;
     text-shadow: 0 0 5px #000000, 0 0 20px #000000; }
-    @media (min-width: 576px) {
-      .header-logo_title {
-        letter-spacing: 0.33em;
-        font-size: 3.5rem; } }
-    @media (max-width: 576px) {
-      .header-logo_title {
-        letter-spacing: 0.2em;
-        font-size: 2.5rem; } }
   .header-logo_description {
     display: block;
     font-size: 1.15rem;
